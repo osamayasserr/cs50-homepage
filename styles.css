@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+html, body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.4em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Utility classes */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+}
+
+.showcase-content {
+    height: 600px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10em;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    font-size: 18px;
+    color: #fff;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #fcb166;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: #fcb166;
+    color: #333;
+}
+
+.clr {
+    clear: both;
+}
+
+/* Navbar */
+#navbar {
+    background-color: #333;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar h2 a {
+    float: left;
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: #e4a300;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#navbar ul li a:hover {
+    color: #e4a300;
+    background-color: #444;
+}
+
+/* Showcase */
+#showcase {
+    background-image: url(images/landing.jpeg);
+    opacity: 0.9;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#showcase h1 {
+    font-size: 100px;
+    margin-bottom: 50px;
+    line-height: 1.4em;
+}
+
+#showcase p {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.4em;
+}
+
+/* Features */
+.box {
+    float: left;
+    height: 250px;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6em;
+}
+
+#main-footer p {
+    font-size: 20px;
+}
+
