@@ -207,6 +207,43 @@ p {
     color: #333;
 }
 
+/* Contact form */
+#form {
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+#form h1 {
+    font-size: 50px;
+    line-height: 1.4em;
+}
+
+#form label {
+    display: block;
+    margin-top: 40px;
+}
+
+#form input, #form textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#form textarea {
+    height: 200px;
+}
+
+#form button {
+    margin: 20px 0;
+
+}
+
+#form input:focus, #form textarea:focus {
+    outline: none;
+    border-color: #fcb166;
+}
+
 /* Footer */
 #main-footer {
     text-align: center;
