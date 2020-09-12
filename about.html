@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to bootstrap and custom stylesheet -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Page title -->
+    <title>Ekraa | About</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h2><a href="index.html" id="logo">Ekraa</a></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="about" class="bg-light">
+        <div id="about-text">
+            <h1><span class="primary-text">About</span> Ekraa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, soluta itaque, 
+                accusamus non cum voluptatibus aliquid perferendis inventore commodi obcaecati 
+                repudiandae id blanditiis! Eum vero voluptas, hic repellendus sunt ipsa.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus architecto 
+                mollitia delectus? Praesentium fuga alias excepturi sit veniam perferendis sequi non fugiat! 
+                Iure accusamus dolorum quibusdam? Aut fugit rem sed, temporibus sapiente doloribus.
+            </p>
+        </div>
+        <div id="about-img">
+            <img src="images/coworking.jpeg" alt="Coworking space">
+        </div>
+    </section>
+    <div class="clr"></div>
+    <section id="learners" class="bg-primary">
+        <div class="container">
+            <div id="learners-text">
+                <h2><span id="learner-count">327</span> <span class="primary-text">Happy</span> Learners So Far!</h2>
+            </div>
+            <button id="join-us" class="btn btn-light">Join us now</button>
+        </div>
+    </section>
+    <footer id="main-footer">
+        <p>Ekraa &copy; 2020, All Rights Reserved</p>
+        <p>Made by: <a href="https://www.linkedin.com/in/osamayasserr/" target="_blank">Osama Yasser</a> <i class="fab fa-linkedin"></i></p>
+    </footer>
+    <div class="clr"></div>
+
+    <!-- JavaScript -->
+    <script>
+        // Set learner count and the join button
+        let learner_count = document.querySelector('#learner-count').innerHTML;
+        let btn = document.querySelector('#join-us');
+
+        // Increase lerner count by one each time btn is clicked
+        btn.onclick = function() {
+            learner_count++;
+            document.querySelector('#learner-count').innerHTML = learner_count;
+            alert("Thank you! You are now part of the community.")
+        };
+    </script>
+</body>
+</html>
