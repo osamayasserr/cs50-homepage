@@ -13,7 +13,7 @@ html, body {
 
 a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 h1, h2, h3 {
@@ -144,7 +144,7 @@ p {
 .box {
     float: left;
     height: 250px;
-    width: 33.3%;
+    width: 33.333%;
     padding: 50px;
     text-align: center;
 }

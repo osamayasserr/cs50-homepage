@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to bootstrap and custom stylesheet -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Page title -->
+    <title>Ekraa | Register</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h2><a href="index.html" id="logo">Ekraa</a></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="form">
+        <div class="container">
+            <h1><span class="primary-text">Register</span> Now</h1>
+            <p>Please fill in your credentials</p>
+            <form onsubmit="greet(name.value); return false;">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="age">Birthdate</label>
+                    <input type="date" name="age" id="age">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Optional..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact-info">
+        <div class="box bg-dark">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Location</h3>
+            <p>Mansoura - Egypt</p>
+        </div>
+        <div class="box bg-dark">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Phone Number</h3>
+            <p>(+20) 888-8888</p>
+        </div>
+        <div class="box bg-dark">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email Address</h3>
+            <p>support@ekraa.com</p>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>Ekraa &copy; 2020, All Rights Reserved</p>
+        <p>Made by: <a href="https://www.linkedin.com/in/osamayasserr/" target="_blank">Osama Yasser</a> <i class="fab fa-linkedin"></i></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Alert if no name
+       function greet(name) {
+           if (!name) {
+               alert('Please make sure to enter valid credentials.')
+           }
+           else {
+               alert('Welcome aboard, ' + name + '!')
+           }
+       };
+   </script>
+</body>
+</html>
